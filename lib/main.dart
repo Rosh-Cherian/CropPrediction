@@ -51,7 +51,7 @@ class _CropPredictionScreenState extends State<CropPredictionScreen> {
     try {
       // Send input data to the backend API
       final response = await http.post(
-        Uri.parse('http://192.168.1.2:5001/predict'), // Replace with your backend URL
+        Uri.parse('http:..'), // Replace with your backend URL
         headers: {"Content-Type": "application/json","Accept": "application/json" },
         body: jsonEncode(inputData),
       );
